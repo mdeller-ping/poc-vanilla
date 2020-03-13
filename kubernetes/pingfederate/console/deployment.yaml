@@ -1,7 +1,6 @@
 apiVersion: v1
 data:
-  ACCESS_GRANT_MANAGER_STORE: "org.sourceid.oauth20.token.AccessGrantManagerLDAPPingDirectoryImpl" # PingDirectory
-  # ACCESS_GRANT_MANAGER_STORE: "org.sourceid.oauth20.token.AccessGrantManagerJdbcImpl" # Hypersonic
+  ACCESS_GRANT_MANAGER_STORE: "org.sourceid.oauth20.token.AccessGrantManagerJdbcImpl" # Hypersonic
   JETTY_THREAD_MIN: "10" # available cpu cores * 12
   JETTY_THREAD_MAX: "200" # avaliable cpu cores * 25
   JVM_HEAP_MIN: "1024m"
@@ -12,7 +11,7 @@ data:
   PF_DNS_PING_RECORDTYPE: SRV
   OPERATIONAL_MODE: CLUSTERED_CONSOLE
   PING_IDENTITY_ACCEPT_EULA: "YES"
-  SERVER_PROFILE_URL: https://github.com/mdeller-ping/pf-performance.git
+  SERVER_PROFILE_URL: https://github.com/mdeller-ping/poc-vanilla.git
   SERVER_PROFILE_PATH: server-profiles/pingfederate
 kind: ConfigMap
 metadata:
