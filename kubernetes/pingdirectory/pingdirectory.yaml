@@ -12,7 +12,6 @@ spec:
       name: ldap
   clusterIP: None
 ---
-
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -31,8 +30,8 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 636
-        - containerPort:  443
-        - containerPort:  389
+        - containerPort: 443
+        - containerPort: 389
         resources:
           requests:
             memory: "2Gi"
