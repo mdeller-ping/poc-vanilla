@@ -20,8 +20,7 @@ metadata:
     tier: console
 spec:
   ports:
-    #NOTE: external port is 443 now
-    - port: 443
+    - port: 9999
       protocol: TCP
       targetPort: 9999
   selector:
