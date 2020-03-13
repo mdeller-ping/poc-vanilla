@@ -1,0 +1,16 @@
+# Default JVM memory options for PingFederate
+#
+# Each non-commented and non-empty line will be added as a Java option when PingFederate is started.
+# Comments can be added to this file by starting a line with the # character.
+#
+
+#Minimum heap size
+-Xms${JVM_HEAP_MIN}
+#Maximum heap size
+-Xmx${JVM_HEAP_MAX}
+#Minimum size for the Young Gen space
+-XX:NewSize=${JVM_NEW_SIZE}
+#Maximum size for the Young Gen space
+-XX:MaxNewSize=${JVM_NEW_SIZE}
+#Use the parallel garbage collector
+-XX:+UseParallelGC
