@@ -7,11 +7,8 @@ data:
   PING_IDENTITY_ACCEPT_EULA: "YES"
   SERVER_PROFILE_URL: https://github.com/mdeller-ping/poc-vanilla.git
   SERVER_PROFILE_PATH: server-profiles/pingfederate
-  HTTPS_PROXY: http://192.168.71.102:8888
-  HTTP_PROXY: http://192.168.71.102:8888
   http_proxy: http://192.168.71.102:8888
   https_proxy: http://192.168.71.102:8888
-  ftp_proxy: http://192.168.71.102:8888
 kind: ConfigMap
 metadata:
   name: console-variables
