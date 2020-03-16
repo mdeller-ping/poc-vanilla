@@ -25,7 +25,7 @@
     <map name="DsigHSMPrivateKeyPasswords"/>
     <!--SSL Keystore information: name and password-->
     <item name="SslKeystoreName">ping-ssl.jks</item>
-    <item name="SslKeystorePassword"/>
+    <item name="SslKeystorePassword">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiWWh2YktDbGt6TSIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..MtqU0FEU6ta2fCsbNNK3YQ.SlMzPlOGMGJwJAFC4RmSbX3gw92m0_dMGxo5YKLPGWI.mEBI5TTQz5XtiAQ2p8K7KA</item>
     <!--Do not modify-->
     <item name="SslKeystoreType2">default</item>
     <!--Map of SSL client auth keystore aliases to passwords; the system uses this map
