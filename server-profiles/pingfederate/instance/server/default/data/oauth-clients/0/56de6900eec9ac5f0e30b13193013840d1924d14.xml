@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:Clients xmlns:urn="urn:pingidentity.com:pf:oauth:client">
-    <urn:Client client_id="pingAccess" name="pingAccess" logo="" secret="_Gt1OAwrtiKFLmrYZT79ad4773KY0LTcvg5ErcBqsNw.1Qu8cmza.2" persistentGrantExpirationTime="0" enabled="true" lastModified="2020-03-17T02:47:07.225Z" bypassApprovalPage="true" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="SECRET" enforceOneTimeJWT="false" isRequireSignedRequest="false">
+    <urn:Client client_id="pingAccess" name="pingAccess" logo="" secret="_Gt1OAwrtiKFLmrYZT79ad4773KY0LTcvg5ErcBqsNw.1Qu8cmza.2" persistentGrantExpirationTime="0" enabled="true" lastModified="2020-03-17T12:13:32.809Z" bypassApprovalPage="true" restrictScopes="false" jwksUri="" jwks="" clientAuthnType="SECRET" enforceOneTimeJWT="false" isRequireSignedRequest="false">
         <urn:Description/>
         <urn:Grant type="authorization_code"/>
         <urn:Grant type="urn:pingidentity.com:oauth2:grant_type:validate_bearer"/>
-        <urn:RedirectUri>https://pa.sp.demoenvi.com/pa/oidc/cb</urn:RedirectUri>
+        <urn:RedirectUri>https://pa.msbx.spratingsvpc.com/pa/oidc/cb</urn:RedirectUri>
         <urn:RedirectUri>https://www.example.com</urn:RedirectUri>
         <urn:RedirectUri>https://httpbin.org/anything</urn:RedirectUri>
         <urn:SupplementalInfo key="ALLOW_EXCLUSIVE_SCOPES" value="false"/>
