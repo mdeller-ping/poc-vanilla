@@ -14,7 +14,7 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: pingfederate-lb
+  name: pingfederate
   # annotations:
   #   service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
   labels:

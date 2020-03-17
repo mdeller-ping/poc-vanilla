@@ -23,6 +23,8 @@ spec:
       port: 443
   selector:
     role: pingaccess
+  sessionAffinity: None
+  type: LoadBalancer
 ---
 apiVersion: apps/v1
 kind: Deployment
