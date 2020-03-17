@@ -56,7 +56,7 @@
          to the alias of a private key and the value of the item is the
          password to that particular key-->
     <map name="SslServerPrivateKeyPasswords">
-        <item name="is3trx83y8bm1osv7hyppqw77">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..Vkwdxdy_S-NYdnxpfRqbmw.Ptio7NZGyS8odKgB1ge7Y91ceArBc58v5z6OFJxNWVk.nhdbnwPR-Qk6iS9MUkBu1Q</item>
+        <item name="6k8hadycclpbyix5cmsaev9n2">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiUWVzOVR5eTV5WiIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..lbb_S8CsNQvhIlEG5dkzKQ.1IORavXf59qfOkGwcLOZ5tVqUfybIwu8Vnc2eWzT8bs.t7dv87Szg5uEmr94m7ZYBw</item>
     </map>
     <!--SSL HSM Server Keystore information: name and password-->
     <item name="SslServerHSMKeystoreName">ping-ssl-server.hsmks</item>
