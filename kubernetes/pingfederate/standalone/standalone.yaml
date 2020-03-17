@@ -1,28 +1,25 @@
 apiVersion: v1
 data:
-  PF_DNS_PING_CLUSTER: _bind-port._tcp.pf-cluster-dns
-  PF_DNS_PING_NAMESPACE: default
-  PF_DNS_PING_RECORDTYPE: SRV
   OPERATIONAL_MODE: STANDALONE
   PING_IDENTITY_ACCEPT_EULA: "YES"
   SERVER_PROFILE_URL: https://github.com/pingidentity/pingidentity-server-profiles.git
   SERVER_PROFILE_PATH: getting-started/pingfederate
-  #http_proxy: http://sqpx.mge.spratingsvpc.com:10041
-  #https_proxy: http://sqpx.mge.spratingsvpc.com:10041
-  #NO_PROXY: 10.,localhost,127.0.0.1,169.254.169.254,.internal,172.20.0.0/16,s3.amazonaws.com,.s3.amazonaws.com,s3.us-east-1.amazonaws.com,.s3.us-east-1.amazonaws.com,.eks.amazonaws.com,.svc
+  # http_proxy: http://sqpx.mge.spratingsvpc.com:10041
+  # https_proxy: http://sqpx.mge.spratingsvpc.com:10041
+  # NO_PROXY: 10.,localhost,127.0.0.1,169.254.169.254,.internal,172.20.0.0/16,s3.amazonaws.com,.s3.amazonaws.com,s3.us-east-1.amazonaws.com,.s3.us-east-1.amazonaws.com,.eks.amazonaws.com,.svc
 kind: ConfigMap
 metadata:
-  name: console-variables
+  name: pingfederate-variables
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: pf-console-lb
-  #annotations:
-  #  service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
+  name: pingfederate-lb
+  # annotations:
+  #   service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
   labels:
-    app: pf-cluster
-    tier: console
+    app: pingfederate
+    tier: standalonw
 spec:
   ports:
     - port: 9999
@@ -34,32 +31,32 @@ spec:
       protocol: TCP
       targetPort: 9031
   selector:
-    app: pf-cluster
-    tier: console
+    app: pingfederate
+    tier: standalone
   sessionAffinity: None
   type: LoadBalancer
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pf-cluster-console
+  name: pingfederate
   labels:
-    app: pf-cluster
-    tier: console
+    app: pingfederate
+    tier: standalone
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pf-cluster
-      tier: console
+      app: pingfederate
+      tier: standalone
   template:
     metadata:
       labels:
-        app: pf-cluster
-        tier: console
+        app: pingfederate
+        tier: standalone
     spec:
       containers:
-        - name: console-node
+        - name: pingfederate
           image: pingidentity/pingfederate:10.0.0-alpine-edge
           ports:
             - containerPort: 9999
@@ -72,7 +69,7 @@ spec:
               cpu: "1"
           envFrom:
             - configMapRef:
-                name: console-variables
+                name: pingfederate-variables
             - secretRef:
                 name: devops-secret
                 optional: true
