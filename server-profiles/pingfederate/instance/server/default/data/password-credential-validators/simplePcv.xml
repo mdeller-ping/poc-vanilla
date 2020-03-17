@@ -6,8 +6,8 @@
         <urn:Table name="Users">
             <urn:Row defaultRow="false">
                 <urn:Field name="Username">user.0@example.com</urn:Field>
-                <urn:Field name="Password">303jH-MEPq_yjOL_znGQ1ESKjiJjoSz5yx5jvHkZlOc.4V8cClZa.2</urn:Field>
-                <urn:Field name="Confirm Password">Hsw8u40lXBdZ8AYSjcSthDARJUxDrfVb15OYjFb0Cow.T8LMPSA1.2</urn:Field>
+                <urn:Field name="Password">VIoxWtyki6xJTg7ml-nuUirI4Or5mpZhWsnv0R7UNco.W-ZPN3s1.2</urn:Field>
+                <urn:Field name="Confirm Password">fnSi11LeG-JO47u0cZwmSaUGERYJXW_AdY9ExKYpIZc.ldUtHryo.2</urn:Field>
                 <urn:Field name="Relax Password Requirements">true</urn:Field>
             </urn:Row>
         </urn:Table>
