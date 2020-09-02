@@ -4,7 +4,6 @@
         <urn:Description/>
         <urn:Grant type="authorization_code"/>
         <urn:Grant type="urn:pingidentity.com:oauth2:grant_type:validate_bearer"/>
-        <urn:RedirectUri>https://pa.msbx.spratingsvpc.com/pa/oidc/cb</urn:RedirectUri>
         <urn:RedirectUri>https://www.example.com</urn:RedirectUri>
         <urn:RedirectUri>https://httpbin.org/anything</urn:RedirectUri>
         <urn:SupplementalInfo key="ALLOW_EXCLUSIVE_SCOPES" value="false"/>
